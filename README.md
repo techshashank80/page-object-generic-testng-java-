@@ -1,10 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome to the my Github Pages
 
-The framework is based on Java, Testng, Maven & Selenium. It used Page object/factory model 
+The framework is based on Java, Testng, Maven & Selenium. It used Page object/factory model. Its ready to use.
 
-### Markdown
+### Main features 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+It has PageGenerator class  for Better Page Object Model, No need to worry about to maintain the page objects and driver instances while traversing to different pages. 
 
 ```markdown
 Syntax highlighted code block
@@ -26,10 +26,3 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/techshashank80/page-object-generic-testng-java-/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
