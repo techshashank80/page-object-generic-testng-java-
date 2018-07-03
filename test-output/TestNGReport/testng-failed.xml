@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [TestNGReport]" parallel="methods">
+  <parameter name="environment" value="qa"/>
+  <test name="test(failed)" parallel="methods">
+    <classes>
+      <class name="com.mytest.LoginTest">
+        <methods>
+          <include name="beforeOwnMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="verify_user_is_able_to_login"/>
+        </methods>
+      </class> <!-- com.mytest.LoginTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [TestNGReport] -->

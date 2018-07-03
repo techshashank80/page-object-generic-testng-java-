@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.mytest.LoginTest">
+        <methods>
+          <include name="verify_When_password_id_is_wrong"/>
+          <include name="verify_when_email_id_is_wrong"/>
+          <include name="beforeOwnMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="verify_user_is_able_to_login"/>
+          <include name="verify_when_both_emailid_and_password_id_are_wrong"/>
+        </methods>
+      </class> <!-- com.mytest.LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

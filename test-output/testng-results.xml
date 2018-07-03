@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNGReport" duration-ms="87829" started-at="2018-07-03T19:43:38Z" finished-at="2018-07-03T19:45:05Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="87829" started-at="2018-07-03T19:43:38Z" finished-at="2018-07-03T19:45:05Z">
+      <class name="com.mytest.LoginTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.mytest.LoginTest@523884b2]" name="beforeTest" is-config="true" duration-ms="86" started-at="2018-07-03T12:43:38Z" finished-at="2018-07-03T12:43:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeOwnMethod(java.lang.reflect.Method)[pri:0, instance:com.mytest.LoginTest@523884b2]" name="beforeOwnMethod" is-config="true" duration-ms="37542" started-at="2018-07-03T12:43:38Z" finished-at="2018-07-03T12:44:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mytest.LoginTest.verify_When_password_id_is_wrong()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeOwnMethod -->
+        <test-method status="PASS" signature="beforeOwnMethod(java.lang.reflect.Method)[pri:0, instance:com.mytest.LoginTest@523884b2]" name="beforeOwnMethod" is-config="true" duration-ms="22612" started-at="2018-07-03T12:43:38Z" finished-at="2018-07-03T12:44:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mytest.LoginTest.verify_user_is_able_to_login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeOwnMethod -->
+        <test-method status="PASS" signature="beforeOwnMethod(java.lang.reflect.Method)[pri:0, instance:com.mytest.LoginTest@523884b2]" name="beforeOwnMethod" is-config="true" duration-ms="29458" started-at="2018-07-03T12:43:38Z" finished-at="2018-07-03T12:44:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mytest.LoginTest.verify_when_email_id_is_wrong()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeOwnMethod -->
+        <test-method status="PASS" signature="beforeOwnMethod(java.lang.reflect.Method)[pri:0, instance:com.mytest.LoginTest@523884b2]" name="beforeOwnMethod" is-config="true" duration-ms="18550" started-at="2018-07-03T12:43:38Z" finished-at="2018-07-03T12:43:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mytest.LoginTest.verify_when_both_emailid_and_password_id_are_wrong()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeOwnMethod -->
+        <test-method status="PASS" signature="verify_when_both_emailid_and_password_id_are_wrong()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="verify_when_both_emailid_and_password_id_are_wrong" duration-ms="19688" started-at="2018-07-03T12:43:56Z" finished-at="2018-07-03T12:44:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_when_both_emailid_and_password_id_are_wrong -->
+        <test-method status="FAIL" signature="verify_user_is_able_to_login()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="verify_user_is_able_to_login" duration-ms="62945" started-at="2018-07-03T12:44:00Z" finished-at="2018-07-03T12:45:03Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 62.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSCMJK2Y7H2', ip: '10.186.42.208', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 259dbb9a-c14d-4d6d-8467-185d95970e5b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 62.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSCMJK2Y7H2', ip: '10.186.42.208', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 259dbb9a-c14d-4d6d-8467-185d95970e5b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.mypages.LoginPage.loginToHome(LoginPage.java:46)
+	at com.mytest.LoginTest.verify_user_is_able_to_login(LoginTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'FSCMJK2Y7H2', ip: '10.186.42.208', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at <anonymous class>.Utils.getElementAt(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10090)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_user_is_able_to_login -->
+        <test-method status="PASS" signature="verify_when_email_id_is_wrong()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="verify_when_email_id_is_wrong" duration-ms="13567" started-at="2018-07-03T12:44:07Z" finished-at="2018-07-03T12:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_when_email_id_is_wrong -->
+        <test-method status="PASS" signature="verify_When_password_id_is_wrong()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="verify_When_password_id_is_wrong" duration-ms="5528" started-at="2018-07-03T12:44:15Z" finished-at="2018-07-03T12:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_When_password_id_is_wrong -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="afterMethod" is-config="true" duration-ms="1081" started-at="2018-07-03T12:44:16Z" finished-at="2018-07-03T12:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="afterMethod" is-config="true" duration-ms="927" started-at="2018-07-03T12:44:21Z" finished-at="2018-07-03T12:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="afterMethod" is-config="true" duration-ms="1143" started-at="2018-07-03T12:44:21Z" finished-at="2018-07-03T12:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mytest.LoginTest@523884b2]" name="afterMethod" is-config="true" duration-ms="2073" started-at="2018-07-03T12:45:03Z" finished-at="2018-07-03T12:45:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.mytest.LoginTest -->
+    </test> <!-- test -->
+  </suite> <!-- TestNGReport -->
+</testng-results>
