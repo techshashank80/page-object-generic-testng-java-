@@ -37,7 +37,7 @@ public class LoginTest extends TestBaseClass{
     {
     	MyLogger.info("Google1 Test Started! " + Thread.currentThread().getId());
     	
-      page.getPageObject(LoginPage.class).loginToHome("smartboydear@gmail.com", "34324");
+      page.getPageObject(LoginPage.class).loginToHome("abc_123456@gmail.com", "34324");
       Assert.assertEquals(page.getPageObject(HomePage.class).getError(),"There is 1 error");
     }
     
