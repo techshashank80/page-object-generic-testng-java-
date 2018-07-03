@@ -7,6 +7,7 @@ The framework is based on Java, Testng, Maven & Selenium. It used Page object/fa
 1. It has PageGenerator class  for Better Page Object Model, No need to worry about to maintain the page objects and driver instances while traversing to different pages. 
 2. Better Property management, its able to support multiple property files
 3. Parallel execution is possible as its using the threading concept. 
+4. Readable, Maintainable, and Reusable.
 
 ### Library used
 1. Selenium
