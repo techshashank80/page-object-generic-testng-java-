@@ -8,8 +8,11 @@ The framework is based on Java, Testng, Maven & Selenium. It used Page object/fa
 2. Better Property management, its able to support multiple property files
 3. Parallel execution is possible as its using the threading concept. 
 
+### Library used
+1. Selenium
+2. Maven
+3. Testng
+4. log4j
+5. aeonbits
 
-
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
