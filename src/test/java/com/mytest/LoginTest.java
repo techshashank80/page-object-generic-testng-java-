@@ -15,10 +15,8 @@ public class LoginTest extends TestBaseClass{
     
     public void verify_user_is_able_to_login()
     {
-      MyLogger.info("Google1 Test Started! " + Thread.currentThread().getId());
-      
       page.getPageObject(LoginPage.class).loginToHome(testEnvironment.username(), testEnvironment.password());
-      Assert.assertEquals(page.getPageObject(HomePage.class).getUserName(),"sachin gupta");
+      Assert.assertEquals(page.getPageObject(HomePage.class).getUserName(),"auto user");
       
     }
     
