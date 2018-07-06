@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestNGReport" title="com.mytest.LoginTest" hash-for-method="verify_user_is_able_to_login">verify_user_is_able_to_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGReport" title="com.mytest.LoginTest" hash-for-method="verify_when_both_emailid_and_password_id_are_wrong">verify_when_both_emailid_and_password_id_are_wrong</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestNGReport -->
@@ -117,11 +122,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestNGReport" title="com.mytest.LoginTest" hash-for-method="verify_When_password_id_is_wrong">verify_When_password_id_is_wrong</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestNGReport" title="com.mytest.LoginTest" hash-for-method="verify_when_both_emailid_and_password_id_are_wrong">verify_when_both_emailid_and_password_id_are_wrong</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -152,38 +152,72 @@
                   <a name="verify_user_is_able_to_login">
                   </a> <!-- verify_user_is_able_to_login -->
                   <span class="method-name">verify_user_is_able_to_login</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
-Command duration or timeout: 62.61 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;FSCMJK2Y7H2&apos;, ip: &apos;10.186.42.208&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 259dbb9a-c14d-4d6d-8467-185d95970e5b
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at com.mypages.LoginPage.loginToHome(LoginPage.java:46)
-	at com.mytest.LoginTest.verify_user_is_able_to_login(LoginTest.java:20)
+                  <div class="stack-trace">java.lang.AssertionError: expected [auto user] but found [Sign in]
+	at com.mytest.LoginTest.verify_user_is_able_to_login(LoginTest.java:19)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_when_both_emailid_and_password_id_are_wrong">
+                  </a> <!-- verify_when_both_emailid_and_password_id_are_wrong -->
+                  <span class="method-name">verify_when_both_emailid_and_password_id_are_wrong</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;FSCMJK2Y7H2&apos;, ip: &apos;10.186.42.208&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
-	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
-	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10090)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHASHA~1.TIW/AppData/Local/Temp/anonymous8957511564936637303webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
-... Removed 18 stack frames
+System info: host: &apos;FSCMJK2Y7H2&apos;, ip: &apos;10.186.42.188&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.mypages.BasePage.readText(BasePage.java:56)
+	at com.mypages.HomePage.getError(HomePage.java:28)
+	at com.mytest.LoginTest.verify_when_both_emailid_and_password_id_are_wrong(LoginTest.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+... Removed 10 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -200,13 +234,6 @@ Driver info: driver.version: unknown
                   <a name="verify_When_password_id_is_wrong">
                   </a> <!-- verify_When_password_id_is_wrong -->
                   <span class="method-name">verify_When_password_id_is_wrong</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_when_both_emailid_and_password_id_are_wrong">
-                  </a> <!-- verify_when_both_emailid_and_password_id_are_wrong -->
-                  <span class="method-name">verify_when_both_emailid_and_password_id_are_wrong</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -273,26 +300,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_user_is_able_to_login')
+data.setCell(0, 1, 'verify_when_both_emailid_and_password_id_are_wrong')
 data.setCell(0, 2, 'com.mytest.LoginTest')
-data.setCell(0, 3, 62945);
+data.setCell(0, 3, 17648);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_when_both_emailid_and_password_id_are_wrong')
+data.setCell(1, 1, 'verify_when_email_id_is_wrong')
 data.setCell(1, 2, 'com.mytest.LoginTest')
-data.setCell(1, 3, 19688);
+data.setCell(1, 3, 14883);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_when_email_id_is_wrong')
+data.setCell(2, 1, 'verify_user_is_able_to_login')
 data.setCell(2, 2, 'com.mytest.LoginTest')
-data.setCell(2, 3, 13567);
+data.setCell(2, 3, 10089);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verify_When_password_id_is_wrong')
 data.setCell(3, 2, 'com.mytest.LoginTest')
-data.setCell(3, 3, 5528);
+data.setCell(3, 3, 6235);
 window.suiteTableData['TestNGReport']= { tableData: data, tableDiv: 'times-div-TestNGReport'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-TestNGReport">
               </div> <!-- times-div-TestNGReport -->
             </div> <!-- times-div -->
@@ -325,53 +352,55 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeOwnMethod(public void com.mytest.LoginTest.verify_When_password_id_is_wrong())</span>
-                <span class="method-start">111 ms</span>
+                <span class="method-start">137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeOwnMethod(public void com.mytest.LoginTest.verify_user_is_able_to_login())</span>
-                <span class="method-start">118 ms</span>
+                <span class="method-start">144 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeOwnMethod(public void com.mytest.LoginTest.verify_when_email_id_is_wrong())</span>
-                <span class="method-start">119 ms</span>
+                <span class="method-start">145 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeOwnMethod(public void com.mytest.LoginTest.verify_when_both_emailid_and_password_id_are_wrong())</span>
-                <span class="method-start">182 ms</span>
+                <span class="method-start">276 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">verify_when_email_id_is_wrong</span>
+                <span class="method-start">10938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_when_both_emailid_and_password_id_are_wrong</span>
-                <span class="method-start">18732 ms</span>
+                <span class="method-start">17516 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verify_user_is_able_to_login</span>
-                <span class="method-start">22730 ms</span>
+                <span class="method-start">24810 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verify_when_email_id_is_wrong</span>
-                <span class="method-start">29577 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">25822 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verify_When_password_id_is_wrong</span>
-                <span class="method-start">37653 ms</span>
+                <span class="method-start">34670 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">38427 ms</span>
+                <span class="method-start">34906 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">43146 ms</span>
+                <span class="method-start">35368 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">43187 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">85717 ms</span>
+                <span class="method-start">40907 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -10,6 +10,7 @@
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="verify_user_is_able_to_login"/>
+          <include name="verify_when_both_emailid_and_password_id_are_wrong"/>
         </methods>
       </class> <!-- com.mytest.LoginTest -->
     </classes>
