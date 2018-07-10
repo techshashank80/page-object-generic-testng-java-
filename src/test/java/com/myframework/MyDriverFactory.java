@@ -28,7 +28,8 @@ public class MyDriverFactory {
 		case "firefox":
 			//driver = drivers.get("firefox");
 			if (driver == null) {
-				driver = new FirefoxDriver();
+				System.setProperty("webdriver.gecko.driver","src\\test\\resources\\drivers\\geckodriver.exe");
+				 driver = new FirefoxDriver();
 				 FirefoxProfile fProfile = new FirefoxProfile();
 		         fProfile.setPreference("browser.download.folderList",2);
 		         fProfile.setPreference("browser.download.dir", System.getProperty("user.dir")+"\\src\\test\\resources\\DownloadData");
