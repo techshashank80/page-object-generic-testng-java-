@@ -12,8 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class MyDriverFactory {
 
-	private static Map<String, WebDriver> drivers = new HashMap<String, WebDriver>();
-    // get the Driver object
+	// get the Driver object
     public static WebDriver getDriver(String browser)
     {
         return createInstance(browser);
@@ -26,7 +25,7 @@ public class MyDriverFactory {
       
         switch (browserName) {
 		case "firefox":
-			//driver = drivers.get("firefox");
+			
 			if (driver == null) {
 				System.setProperty("webdriver.gecko.driver","src\\test\\resources\\drivers\\geckodriver.exe");
 				 driver = new FirefoxDriver();
@@ -37,36 +36,29 @@ public class MyDriverFactory {
 		         fProfile.setPreference("browser.download.manager.showWhenStarting",false);
 		         fProfile.setPreference("browser.helperApps.alwaysAsk.force", false);
 		         capabilities.setCapability(FirefoxDriver.PROFILE, fProfile);
-				 //drivers.put("firefox", driver);
+				
 			}
 			break;
         
 		case "IE":
-			driver = drivers.get("IE");
+		
 			if (driver == null) {
 				driver = new InternetExplorerDriver();
-				drivers.put("IE", driver);
+				//drivers.put("IE", driver);
 			}
 			break;
 		case "Chrome":
-			driver = drivers.get("Chrome");
+			
 			if (driver == null) {
 				
 				driver = new ChromeDriver();
-				drivers.put("Chrome", driver);
+				//drivers.put("Chrome", driver);
 			}
 			break;
 		}
 		return driver;
-
-        //return driver;
     }
-    public static void closeAllRunningDriver() {
-		for (String key : drivers.keySet()) {
-			drivers.get(key).close();
-			//drivers.get(key).quit();
-		}
-	}
+    
 
 
 }
